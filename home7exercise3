@@ -1,0 +1,18 @@
+public class home7exercise3 {
+
+	public static void main(String[] args) {
+		String str = "5465adfadf---  ";
+
+		printText(deleteLeters(str));
+	}
+
+	public static void printText(String strToPrint) {
+		System.out.print(strToPrint);
+	}
+
+	public static String deleteLeters(String ltrToDelete) {
+		String regexp = "[а-яА-ЯёЁa-zA-Z]";
+		return(ltrToDelete.replaceAll(regexp, ""));
+	}
+
+}
