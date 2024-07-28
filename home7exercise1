@@ -1,0 +1,11 @@
+public class home7exercise1 {
+
+	public static void main(String[] args) {
+		String str = "В тексте, который вы видите на этом изображении, посчитайте количество букв 'е' в каждом слове";
+		char leter = 'е';
+		for (String word : str.split(" ")) {
+			System.out.println(word.replaceAll("[^а-яёА-ЯЁa-zA-Z]", "") + ": " + word.replaceAll("[^" + leter + "]", "").length());
+		}
+	}
+
+}
